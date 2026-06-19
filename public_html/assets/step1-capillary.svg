@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="edgeFade1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="white" stop-opacity="0"/>
+      <stop offset="15%" stop-color="white" stop-opacity="1"/>
+      <stop offset="85%" stop-color="white" stop-opacity="1"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="fadeMask1">
+      <rect x="0" y="0" width="400" height="300" fill="url(#edgeFade1)"/>
+    </mask>
+  </defs>
+
+  <!-- Same flat-illustration brand style as harvesting.png / element-mounds.svg -->
+  <!-- Layered desert dune bands -->
+
+  <g mask="url(#fadeMask1)">
+    <!-- Back dune band (dark rose) -->
+    <path d="M0 160 Q100 100 200 130 Q300 158 400 110 L400 300 L0 300Z" fill="#C45A6A"/>
+  
+    <!-- Mid dune band (warm pink) -->
+    <path d="M0 195 Q80 155 160 170 Q240 185 320 160 Q360 150 400 165 L400 300 L0 300Z" fill="#D4748C"/>
+  
+    <!-- Front dune band (light blush) -->
+    <path d="M0 230 Q60 210 120 222 Q200 235 280 215 Q340 205 400 220 L400 300 L0 300Z" fill="#E8A0B0"/>
+  
+    <!-- Ground line (sand/cream) -->
+    <path d="M0 255 Q100 248 200 252 Q300 256 400 250 L400 300 L0 300Z" fill="#F5E8D8"/>
+  </g>
+
+  <!-- Left salt mound (large) -->
+  <path d="M 20 270 C 40 220, 50 160, 80 140 C 100 120, 110 90, 130 80 C 150 100, 170 140, 190 180 C 210 220, 220 250, 240 270 Z" fill="#F5F1EB"/>
+  <path d="M 20 270 C 40 220, 50 160, 80 140 C 100 120, 110 90, 130 80 C 120 130, 130 180, 110 230 C 100 250, 120 265, 115 270 Z" fill="#DDD8CE" opacity="0.55"/>
+  <path d="M 130 80 C 150 100, 170 140, 190 180 C 210 220, 220 250, 240 270 L 115 270 C 120 265, 100 250, 110 230 C 130 180, 120 130, 130 80 Z" fill="#FFFCF7" opacity="0.45"/>
+  <!-- Mound shadow -->
+  <ellipse cx="128" cy="272" rx="108" ry="8" fill="#C4A882" opacity="0.25"/>
+
+  <!-- Right smaller salt mound -->
+  <path d="M 260 270 C 280 230, 290 180, 310 160 C 320 140, 330 120, 340 115 C 360 135, 370 170, 390 210 C 400 240, 410 260, 420 270 Z" fill="#F5F1EB"/>
+  <path d="M 260 270 C 280 230, 290 180, 310 160 C 320 140, 330 120, 340 115 C 330 160, 340 200, 320 240 C 310 255, 330 265, 325 270 Z" fill="#DDD8CE" opacity="0.48"/>
+  <path d="M 340 115 C 360 135, 370 170, 390 210 C 400 240, 410 260, 420 270 L 325 270 C 330 265, 310 255, 320 240 C 340 200, 330 160, 340 115 Z" fill="#FFFCF7" opacity="0.32"/>
+  <ellipse cx="337" cy="270" rx="76" ry="6" fill="#C4A882" opacity="0.2"/>
+
+  <!-- Sun (top right) -->
+  <circle cx="360" cy="55" r="35" fill="#F5C842" opacity="0.9"/>
+  <circle cx="360" cy="55" r="25" fill="#FFD84A"/>
+  <!-- Sun rays -->
+  <g stroke="#FFD84A" stroke-width="2.5" stroke-linecap="round" opacity="0.65">
+    <line x1="360" y1="12" x2="360" y2="4"/>
+    <line x1="360" y1="98" x2="360" y2="106"/>
+    <line x1="317" y1="55" x2="309" y2="55"/>
+    <line x1="403" y1="55" x2="411" y2="55"/>
+    <line x1="330" y1="25" x2="324" y2="19"/>
+    <line x1="390" y1="25" x2="396" y2="19"/>
+    <line x1="330" y1="85" x2="324" y2="91"/>
+    <line x1="390" y1="85" x2="396" y2="91"/>
+  </g>
+</svg>

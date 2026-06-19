@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 300">
+  <defs>
+    <linearGradient id="edgeFade2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="white" stop-opacity="0"/>
+      <stop offset="15%" stop-color="white" stop-opacity="1"/>
+      <stop offset="85%" stop-color="white" stop-opacity="1"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="fadeMask2">
+      <rect x="0" y="0" width="380" height="300" fill="url(#edgeFade2)"/>
+    </mask>
+  </defs>
+
+  <!-- Step 2: Brine Channeling — salt mound pile, brand flat style, no background -->
+
+  <g mask="url(#fadeMask2)">
+    <!-- Background dune stripe (visible in reference behind the salt pile) -->
+    <path d="M0 210 Q95 165 190 185 Q285 205 380 172 L380 300 L0 300Z" fill="#E8A0B0" opacity="0.65"/>
+  
+    <!-- Ground / brine pan (flat pinkish reflective surface) -->
+    <path d="M0 250 Q95 240 190 245 Q285 250 380 242 L380 300 L0 300Z" fill="#F0D8E0"/>
+  
+    <!-- Brine sheen on pan (horizontal reflective lines) -->
+    <ellipse cx="190" cy="252" rx="170" ry="10" fill="#D4B8C4" opacity="0.35"/>
+    <path d="M40 255 Q190 250 340 255" stroke="#E0C8D2" stroke-width="1.5" fill="none" opacity="0.5"/>
+    <path d="M70 260 Q190 256 310 260" stroke="#E0C8D2" stroke-width="1" fill="none" opacity="0.4"/>
+  </g>
+
+  <!-- Main large salt mound (centre) — natural organic pile -->
+  <path d="M 60 260 C 80 200, 100 140, 130 120 C 150 100, 160 80, 180 70 C 200 90, 220 140, 250 180 C 270 220, 290 250, 310 260 Z" fill="#F5F1EB"/>
+  <!-- Left shading -->
+  <path d="M 60 260 C 80 200, 100 140, 130 120 C 150 100, 160 80, 180 70 C 170 120, 190 170, 170 220 C 160 240, 180 255, 175 260 Z" fill="#DDD8CE" opacity="0.55"/>
+  <!-- Right highlight -->
+  <path d="M 180 70 C 200 90, 220 140, 250 180 C 270 220, 290 250, 310 260 L 175 260 C 180 255, 160 240, 170 220 C 190 170, 170 120, 180 70 Z" fill="#FFFCF7" opacity="0.38"/>
+  <!-- Ground shadow -->
+  <ellipse cx="194" cy="263" rx="138" ry="9" fill="#C4A882" opacity="0.28"/>
+
+  <!-- Smaller mound right side -->
+  <path d="M 280 260 C 300 220, 310 180, 330 160 C 340 150, 345 140, 355 130 C 370 150, 380 190, 395 220 C 405 240, 410 250, 420 260 Z" fill="#F5F1EB" opacity="0.9"/>
+  <path d="M 280 260 C 300 220, 310 180, 330 160 C 340 150, 345 140, 355 130 C 340 170, 360 210, 340 240 C 330 250, 350 255, 345 260 Z" fill="#DDD8CE" opacity="0.45"/>
+
+  <!-- Salt crystals at base -->
+  <ellipse cx="130" cy="258" rx="22" ry="6" fill="white" opacity="0.6"/>
+  <ellipse cx="270" cy="255" rx="16" ry="5" fill="white" opacity="0.5"/>
+  <ellipse cx="194" cy="262" rx="30" ry="7" fill="white" opacity="0.45"/>
+</svg>

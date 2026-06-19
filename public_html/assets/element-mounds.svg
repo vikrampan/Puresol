@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 225">
+  <!-- Ground shadow -->
+  <ellipse cx="102" cy="218" rx="106" ry="9"  fill="#C4A882" opacity="0.28"/>
+  <ellipse cx="236" cy="218" rx="72"  ry="7.5" fill="#C4A882" opacity="0.22"/>
+
+  <!-- Large left mound -->
+  <path d="M 2 220 Q 52 124 102 28 Q 152 124 202 220 Z" fill="#F5F1EB"/>
+  <!-- Left‐side shading -->
+  <path d="M 2 220 Q 52 124 102 28 Q 84 110 46 194 Z" fill="#DDD8CE" opacity="0.52"/>
+  <!-- Subtle highlight ridge -->
+  <path d="M 102 28 Q 118 110 140 190 L 148 220 L 202 220 Q 152 124 102 28 Z" fill="#FFFCF7" opacity="0.35"/>
+
+  <!-- Right smaller mound -->
+  <path d="M 170 220 Q 208 140 236 70 Q 264 140 300 220 Z" fill="#F5F1EB"/>
+  <!-- Shading -->
+  <path d="M 170 220 Q 208 140 236 70 Q 222 130 196 202 Z" fill="#DDD8CE" opacity="0.46"/>
+  <path d="M 236 70 Q 252 136 270 202 L 278 220 L 300 220 Q 264 140 236 70 Z" fill="#FFFCF7" opacity="0.30"/>
+</svg>

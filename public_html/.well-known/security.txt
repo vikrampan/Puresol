@@ -1,0 +1,9 @@
+# Puresol Security Disclosure Policy
+# Agrigore Ventures Pvt. Ltd.
+
+Contact: mailto:info@puresol.in
+Contact: tel:+91-85868-91913
+Expires: 2027-05-24T00:00:00.000Z
+Preferred-Languages: en, hi
+Canonical: https://puresol.in/.well-known/security.txt
+Policy: https://puresol.in/terms.html

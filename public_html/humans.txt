@@ -1,0 +1,27 @@
+/* TEAM */
+
+  Company: Agrigore Ventures Pvt. Ltd.
+  Brand: Puresol
+  Contact: info@puresol.in
+  Phone: +91 85868 91913
+  Location: Sambhar Lake, Rajasthan, India
+
+  Director: Shubham Sachan
+  Director: Niteesh Joshi
+
+/* PRODUCT */
+
+  Name: Puresol Natural Alkaline Salt
+  Source: Sambhar Lake, Rajasthan
+  Process: Suryatapa (sun-curing, 9–12 months)
+  pH: 9+
+  Minerals: 54+ essential trace minerals
+  Microplastics: Zero
+  Certification: FSSAI
+
+/* SITE */
+
+  Last update: 2026-05-24
+  Language: English (en-IN)
+  Doctype: HTML5
+  Standards: Schema.org, Open Graph, Twitter Card

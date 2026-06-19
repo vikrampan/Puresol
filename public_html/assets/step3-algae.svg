@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 300">
+  <defs>
+    <linearGradient id="edgeFade3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="white" stop-opacity="0"/>
+      <stop offset="15%" stop-color="white" stop-opacity="1"/>
+      <stop offset="85%" stop-color="white" stop-opacity="1"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="fadeMask3">
+      <rect x="0" y="0" width="380" height="300" fill="url(#edgeFade3)"/>
+    </mask>
+  </defs>
+
+  <!-- Step 3: Dunaliella salina — pink salt pile + algae cell bubble, brand flat style -->
+
+  <g mask="url(#fadeMask3)">
+    <!-- Background stripe (rose pink) -->
+    <path d="M0 195 Q95 160 190 178 Q285 195 380 165 L380 300 L0 300Z" fill="#D4748C" opacity="0.6"/>
+  
+    <!-- Ground -->
+    <path d="M0 248 Q95 238 190 243 Q285 248 380 240 L380 300 L0 300Z" fill="#F0D0DC"/>
+  </g>
+
+  <!-- Pink salt mound (organic mound shape) -->
+  <path d="M 50 255 C 80 190, 115 130, 150 100 C 170 80, 185 65, 200 50 C 220 70, 250 120, 280 170 C 310 220, 330 240, 348 255 Z" fill="#F9D8E5"/>
+  <!-- Left shading (deeper rose) -->
+  <path d="M 50 255 C 80 190, 115 130, 150 100 C 170 80, 185 65, 200 50 C 185 110, 210 170, 190 220 C 180 240, 195 250, 190 255 Z" fill="#E8B0C5" opacity="0.6"/>
+  <!-- Right highlight -->
+  <path d="M 200 50 C 220 70, 250 120, 280 170 C 310 220, 330 240, 348 255 L 190 255 C 195 250, 180 240, 190 220 C 210 170, 185 110, 200 50 Z" fill="#FFF0F5" opacity="0.42"/>
+  <!-- Ground shadow -->
+  <ellipse cx="200" cy="258" rx="148" ry="9" fill="#C47890" opacity="0.25"/>
+
+  <!-- Pink brine crystals at base -->
+  <ellipse cx="130" cy="252" rx="28" ry="7" fill="#F5C5D8" opacity="0.6"/>
+  <ellipse cx="200" cy="256" rx="35" ry="8" fill="#F5C5D8" opacity="0.5"/>
+  <ellipse cx="270" cy="251" rx="22" ry="6" fill="#F5C5D8" opacity="0.55"/>
+
+  <!-- Algae cell bubble (upper right — the magnified circle from reference) -->
+  <!-- Circle frame -->
+  <circle cx="295" cy="88" r="58" fill="#FDEEF5" opacity="0.97"/>
+  <circle cx="295" cy="88" r="58" fill="none" stroke="#D4547A" stroke-width="2.5"/>
+
+  <!-- Inside algae illustration (simplified Dunaliella cell) -->
+  <!-- Cell body - oval -->
+  <ellipse cx="295" cy="90" rx="38" ry="46" fill="#F5A0C0" opacity="0.7"/>
+  <!-- Cell membrane -->
+  <ellipse cx="295" cy="90" rx="36" ry="44" fill="none" stroke="#E07898" stroke-width="1.5" opacity="0.8"/>
+  <!-- Nucleus -->
+  <ellipse cx="288" cy="85" rx="16" ry="14" fill="#C0406A" opacity="0.8"/>
+  <ellipse cx="285" cy="82" rx="6" ry="5" fill="#E870A0" opacity="0.55"/>
+  <!-- Beta-carotene droplets (orange) -->
+  <circle cx="308" cy="100" r="9" fill="#FF9820" opacity="0.85"/>
+  <circle cx="306" cy="98" r="4" fill="#FFD040" opacity="0.7"/>
+  <circle cx="278" cy="112" r="6" fill="#FF8818" opacity="0.75"/>
+  <circle cx="308" cy="72" r="5" fill="#FFA828" opacity="0.7"/>
+  <!-- Flagella (two tail hairs at top) -->
+  <path d="M292 44 Q296 30 290 18" stroke="#D05878" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <path d="M299 46 Q306 32 302 20" stroke="#D05878" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Dotted zoom ring -->
+  <circle cx="295" cy="88" r="62" fill="none" stroke="#C03860" stroke-width="1.2" stroke-dasharray="7 4" opacity="0.4"/>
+</svg>

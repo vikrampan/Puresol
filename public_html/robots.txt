@@ -1,0 +1,65 @@
+# ============================================================
+# Puresol — robots.txt
+# Agrigore Ventures Pvt. Ltd.
+# https://puresol.in
+# ============================================================
+
+# Allow all major crawlers full access to content
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /includes/
+Disallow: /logs/
+Disallow: /scripts/
+Disallow: /config.php
+Disallow: /setup.sql
+Disallow: /.htaccess
+Disallow: /uploads/temp/
+Disallow: /*?*csrf=
+Disallow: /*?*session=
+
+# Allow Google Image Bot to index all product images
+User-agent: Googlebot-Image
+Allow: /assets/
+Allow: /uploads/products/
+
+# Allow Googlebot, Bingbot, DuckDuckBot full access for fast crawling
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /includes/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /includes/
+
+User-agent: DuckDuckBot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+
+# Block common AI scraping bots that don't drive search traffic
+User-agent: GPTBot
+Disallow: /admin/
+Disallow: /api/
+
+User-agent: CCBot
+Disallow: /admin/
+Disallow: /api/
+
+# Crawl-delay for aggressive bots (in seconds)
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Crawl-delay: 10
+
+# Sitemap
+Sitemap: https://puresol.in/sitemap.xml

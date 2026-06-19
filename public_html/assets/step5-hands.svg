@@ -1,0 +1,266 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 400" width="520" height="400">
+  <defs>
+    <!-- Palm gradients -->
+    <radialGradient id="leftPalm" cx="45%" cy="42%" r="55%">
+      <stop offset="0%" stop-color="#7A3A1A"/>
+      <stop offset="60%" stop-color="#5C2510"/>
+      <stop offset="100%" stop-color="#3B1508"/>
+    </radialGradient>
+    <radialGradient id="rightPalm" cx="55%" cy="42%" r="55%">
+      <stop offset="0%" stop-color="#7A3A1A"/>
+      <stop offset="60%" stop-color="#5C2510"/>
+      <stop offset="100%" stop-color="#3B1508"/>
+    </radialGradient>
+    <linearGradient id="fingerLeft1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B4220"/>
+      <stop offset="100%" stop-color="#4A1E0A"/>
+    </linearGradient>
+    <linearGradient id="fingerLeft2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B4220"/>
+      <stop offset="100%" stop-color="#4A1E0A"/>
+    </linearGradient>
+    <linearGradient id="fingerRight1" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8B4220"/>
+      <stop offset="100%" stop-color="#4A1E0A"/>
+    </linearGradient>
+
+    <!-- Crystal gradients -->
+    <linearGradient id="crystalTopC" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDEEF5"/>
+      <stop offset="100%" stop-color="#E8A0C0"/>
+    </linearGradient>
+    <linearGradient id="crystalLeftC" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#D4709A"/>
+      <stop offset="100%" stop-color="#9E3A62"/>
+    </linearGradient>
+    <linearGradient id="crystalRightC" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F2BCCE"/>
+      <stop offset="100%" stop-color="#C8689A"/>
+    </linearGradient>
+    <linearGradient id="crystalTopS" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAEAF2"/>
+      <stop offset="100%" stop-color="#ECAAC4"/>
+    </linearGradient>
+    <linearGradient id="crystalLeftS" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#CC6090"/>
+      <stop offset="100%" stop-color="#8E2E54"/>
+    </linearGradient>
+    <linearGradient id="crystalRightS" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EDB0C8"/>
+      <stop offset="100%" stop-color="#BA5888"/>
+    </linearGradient>
+
+    <!-- Subtle shadow under crystals -->
+    <radialGradient id="crystalShadow" cx="50%" cy="100%" r="50%">
+      <stop offset="0%" stop-color="#2A0A04" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#2A0A04" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Knuckle highlight -->
+    <filter id="softBlur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5"/>
+    </filter>
+  </defs>
+
+  <!-- ═══════════════════════════════════ -->
+  <!--  LEFT HAND                          -->
+  <!-- ═══════════════════════════════════ -->
+
+  <!-- Thumb (left) -->
+  <path d="M 72,310 Q 52,295 50,270 Q 48,250 62,242 Q 76,236 88,252 Q 96,264 94,285 Z"
+        fill="url(#fingerLeft1)" stroke="#3B1508" stroke-width="1"/>
+
+  <!-- Fingers left hand — rendered back-to-front -->
+  <!-- Pinky (outermost, most tilted) -->
+  <rect x="-14" y="-52" width="22" height="85"
+        rx="11" ry="11"
+        fill="url(#fingerLeft1)"
+        stroke="#3B1508" stroke-width="1"
+        transform="translate(95,282) rotate(-34)"/>
+
+  <!-- Ring finger -->
+  <rect x="-13" y="-58" width="24" height="100"
+        rx="12" ry="12"
+        fill="url(#fingerLeft2)"
+        stroke="#3B1508" stroke-width="1"
+        transform="translate(118,268) rotate(-22)"/>
+
+  <!-- Middle finger -->
+  <rect x="-13" y="-62" width="25" height="108"
+        rx="12" ry="12"
+        fill="url(#fingerLeft2)"
+        stroke="#3B1508" stroke-width="1"
+        transform="translate(143,260) rotate(-12)"/>
+
+  <!-- Index finger -->
+  <rect x="-12" y="-58" width="24" height="100"
+        rx="12" ry="12"
+        fill="url(#fingerLeft1)"
+        stroke="#3B1508" stroke-width="1"
+        transform="translate(166,262) rotate(-4)"/>
+
+  <!-- Palm left -->
+  <ellipse cx="128" cy="300" rx="82" ry="56"
+           fill="url(#leftPalm)" stroke="#3B1508" stroke-width="1.5"/>
+
+  <!-- Knuckle highlight strips -->
+  <rect x="-10" y="-54" width="20" height="10"
+        rx="5" fill="#9B5530" opacity="0.5" filter="url(#softBlur)"
+        transform="translate(143,261) rotate(-12)"/>
+  <rect x="-10" y="-50" width="20" height="10"
+        rx="5" fill="#9B5530" opacity="0.5" filter="url(#softBlur)"
+        transform="translate(118,269) rotate(-22)"/>
+
+  <!-- Palm crease lines -->
+  <path d="M 78,310 Q 128,298 172,308" fill="none" stroke="#3A1408" stroke-width="1.2" opacity="0.5"/>
+  <path d="M 90,325 Q 130,316 168,322" fill="none" stroke="#3A1408" stroke-width="1" opacity="0.4"/>
+
+
+  <!-- ═══════════════════════════════════ -->
+  <!--  RIGHT HAND                         -->
+  <!-- ═══════════════════════════════════ -->
+
+  <!-- Thumb (right) -->
+  <path d="M 448,310 Q 468,295 470,270 Q 472,250 458,242 Q 444,236 432,252 Q 424,264 426,285 Z"
+        fill="url(#fingerRight1)" stroke="#3B1508" stroke-width="1"/>
+
+  <!-- Fingers right hand — mirror of left -->
+  <!-- Pinky -->
+  <rect x="-8" y="-52" width="22" height="85"
+        rx="11" ry="11"
+        fill="url(#fingerRight1)"
+        stroke="#3B1508" stroke-width="1"
+        transform="translate(425,282) rotate(214)"/>
+
+  <!-- Ring finger -->
+  <rect x="-11" y="-58" width="24" height="100"
+        rx="12" ry="12"
+        fill="url(#fingerRight1)"
+        stroke="#3B1508" stroke-width="1"
+        transform="translate(402,268) rotate(202)"/>
+
+  <!-- Middle finger -->
+  <rect x="-12" y="-62" width="25" height="108"
+        rx="12" ry="12"
+        fill="url(#fingerRight1)"
+        stroke="#3B1508" stroke-width="1"
+        transform="translate(377,260) rotate(192)"/>
+
+  <!-- Index finger -->
+  <rect x="-12" y="-58" width="24" height="100"
+        rx="12" ry="12"
+        fill="url(#fingerRight1)"
+        stroke="#3B1508" stroke-width="1"
+        transform="translate(354,262) rotate(184)"/>
+
+  <!-- Palm right -->
+  <ellipse cx="392" cy="300" rx="82" ry="56"
+           fill="url(#rightPalm)" stroke="#3B1508" stroke-width="1.5"/>
+
+  <!-- Knuckle highlights right -->
+  <rect x="-10" y="-54" width="20" height="10"
+        rx="5" fill="#9B5530" opacity="0.5" filter="url(#softBlur)"
+        transform="translate(377,261) rotate(192)"/>
+  <rect x="-10" y="-50" width="20" height="10"
+        rx="5" fill="#9B5530" opacity="0.5" filter="url(#softBlur)"
+        transform="translate(402,269) rotate(202)"/>
+
+  <!-- Palm crease lines right -->
+  <path d="M 442,310 Q 392,298 348,308" fill="none" stroke="#3A1408" stroke-width="1.2" opacity="0.5"/>
+  <path d="M 430,325 Q 390,316 352,322" fill="none" stroke="#3A1408" stroke-width="1" opacity="0.4"/>
+
+
+  <!-- ═══════════════════════════════════ -->
+  <!--  CRYSTAL SHADOWS                    -->
+  <!-- ═══════════════════════════════════ -->
+  <ellipse cx="187" cy="282" rx="38" ry="14" fill="url(#crystalShadow)"/>
+  <ellipse cx="260" cy="240" rx="52" ry="18" fill="url(#crystalShadow)"/>
+  <ellipse cx="333" cy="279" rx="38" ry="14" fill="url(#crystalShadow)"/>
+
+
+  <!-- ═══════════════════════════════════ -->
+  <!--  CENTRE CRYSTAL (large)             -->
+  <!-- ═══════════════════════════════════ -->
+  <!-- Top facet -->
+  <polygon points="260,100 300,148 260,162 220,148"
+           fill="url(#crystalTopC)" stroke="#C0608E" stroke-width="1"/>
+  <!-- Left upper facet -->
+  <polygon points="220,148 260,162 248,204 200,184"
+           fill="url(#crystalLeftC)" stroke="#8E3060" stroke-width="1"/>
+  <!-- Right upper facet -->
+  <polygon points="300,148 320,184 272,204 260,162"
+           fill="url(#crystalRightC)" stroke="#C06898" stroke-width="1"/>
+  <!-- Left lower facet -->
+  <polygon points="200,184 248,204 240,238 192,220"
+           fill="#B85880" stroke="#8E3060" stroke-width="1"/>
+  <!-- Right lower facet -->
+  <polygon points="272,204 320,184 328,220 280,238"
+           fill="#DFA0BC" stroke="#C06898" stroke-width="1"/>
+  <!-- Bottom tip -->
+  <polygon points="192,220 240,238 260,252 280,238 328,220 260,260"
+           fill="#C87098" stroke="#9E4870" stroke-width="1"/>
+  <!-- Highlight sliver on top facet -->
+  <polygon points="258,108 278,132 260,136 242,132"
+           fill="white" opacity="0.28"/>
+
+
+  <!-- ═══════════════════════════════════ -->
+  <!--  LEFT SMALL CRYSTAL                 -->
+  <!-- ═══════════════════════════════════ -->
+  <polygon points="187,194 215,228 187,238 159,228"
+           fill="url(#crystalTopS)" stroke="#B85880" stroke-width="1"/>
+  <polygon points="159,228 187,238 178,264 144,252"
+           fill="url(#crystalLeftS)" stroke="#8A2E52" stroke-width="1"/>
+  <polygon points="215,228 230,252 221,264 187,238"
+           fill="url(#crystalRightS)" stroke="#BE6090" stroke-width="1"/>
+  <polygon points="144,252 178,264 172,282 140,270"
+           fill="#A84E76" stroke="#8A2E52" stroke-width="1"/>
+  <polygon points="221,264 230,252 236,270 202,282"
+           fill="#D898B8" stroke="#BE6090" stroke-width="1"/>
+  <polygon points="140,270 172,282 187,290 202,282 236,270 187,296"
+           fill="#C06890" stroke="#9A4870" stroke-width="1"/>
+  <polygon points="185,200 202,218 187,222 172,218"
+           fill="white" opacity="0.24"/>
+
+
+  <!-- ═══════════════════════════════════ -->
+  <!--  RIGHT SMALL CRYSTAL                -->
+  <!-- ═══════════════════════════════════ -->
+  <polygon points="333,191 361,225 333,235 305,225"
+           fill="url(#crystalTopS)" stroke="#B85880" stroke-width="1"/>
+  <polygon points="305,225 333,235 324,261 290,249"
+           fill="url(#crystalLeftS)" stroke="#8A2E52" stroke-width="1"/>
+  <polygon points="361,225 376,249 367,261 333,235"
+           fill="url(#crystalRightS)" stroke="#BE6090" stroke-width="1"/>
+  <polygon points="290,249 324,261 318,279 286,267"
+           fill="#A84E76" stroke="#8A2E52" stroke-width="1"/>
+  <polygon points="367,261 376,249 382,267 348,279"
+           fill="#D898B8" stroke="#BE6090" stroke-width="1"/>
+  <polygon points="286,267 318,279 333,287 348,279 382,267 333,293"
+           fill="#C06890" stroke="#9A4870" stroke-width="1"/>
+  <polygon points="331,197 348,215 333,219 318,215"
+           fill="white" opacity="0.24"/>
+
+
+  <!-- ═══════════════════════════════════ -->
+  <!--  SPARKLE GLINTS                     -->
+  <!-- ═══════════════════════════════════ -->
+  <!-- Centre crystal glint -->
+  <line x1="260" y1="92" x2="260" y2="82" stroke="white" stroke-width="2" opacity="0.8"/>
+  <line x1="255" y1="87" x2="265" y2="87" stroke="white" stroke-width="2" opacity="0.8"/>
+  <line x1="253" y1="90" x2="267" y2="84" stroke="white" stroke-width="1" opacity="0.5"/>
+
+  <!-- Left crystal glint -->
+  <line x1="187" y1="186" x2="187" y2="178" stroke="white" stroke-width="1.5" opacity="0.75"/>
+  <line x1="183" y1="182" x2="191" y2="182" stroke="white" stroke-width="1.5" opacity="0.75"/>
+
+  <!-- Right crystal glint -->
+  <line x1="333" y1="183" x2="333" y2="175" stroke="white" stroke-width="1.5" opacity="0.75"/>
+  <line x1="329" y1="179" x2="337" y2="179" stroke="white" stroke-width="1.5" opacity="0.75"/>
+
+  <!-- Scattered tiny sparkles -->
+  <circle cx="308" cy="118" r="2.2" fill="white" opacity="0.6"/>
+  <circle cx="216" cy="210" r="1.8" fill="white" opacity="0.55"/>
+  <circle cx="360" cy="205" r="1.8" fill="white" opacity="0.55"/>
+  <circle cx="240" cy="95"  r="1.5" fill="white" opacity="0.45"/>
+</svg>

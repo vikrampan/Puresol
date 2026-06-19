@@ -1,0 +1,27 @@
+{
+  "name": "Puresol — Hand-Harvested Alkaline Salt",
+  "short_name": "Puresol",
+  "description": "India's purest hand-harvested alkaline salt from Sambhar Lake. Retail and bulk/wholesale orders. pH 9+, 54+ minerals, zero microplastics.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f6f3ee",
+  "theme_color": "#5C1A2A",
+  "lang": "en-IN",
+  "categories": ["food", "shopping", "business"],
+  "icons": [
+    {
+      "src": "/assets/logo-full.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/logo-full.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

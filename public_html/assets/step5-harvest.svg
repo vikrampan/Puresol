@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 300">
+  <!-- Step 5: Hand Harvest — Highly realistic, natural hands holding salt crystals -->
+  <defs>
+    <!-- Skin tones and natural gradients -->
+    <linearGradient id="skinBaseLeft" x1="0" y1="0.5" x2="1" y2="0.6">
+      <stop offset="0%" stop-color="#ab6a4f"/>
+      <stop offset="60%" stop-color="#91523a"/>
+      <stop offset="100%" stop-color="#733c27"/>
+    </linearGradient>
+    <radialGradient id="palmDepthLeft" cx="40%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#c47a5b" stop-opacity="0.6"/>
+      <stop offset="70%" stop-color="#80442c" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#5a2e1c" stop-opacity="0.8"/>
+    </radialGradient>
+    <linearGradient id="skinBaseRight" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a36348"/>
+      <stop offset="40%" stop-color="#8a4d35"/>
+      <stop offset="100%" stop-color="#5a2e1c"/>
+    </linearGradient>
+    <radialGradient id="palmDepthRight" cx="60%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#bd7254" stop-opacity="0.7"/>
+      <stop offset="80%" stop-color="#82462e" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#4a2414" stop-opacity="0.9"/>
+    </radialGradient>
+  </defs>
+
+  <!-- LEFT HAND (Realistic shaping, palm and cupped fingers) -->
+  <g id="left-hand">
+    <!-- Base hand structure -->
+    <path d="M15 220 Q10 240 25 260 C40 280, 70 285, 95 275 C120 265, 140 245, 145 210 C150 175, 140 150, 120 135 C100 120, 75 115, 55 125 C35 135, 20 160, 25 190 Z" fill="url(#skinBaseLeft)"/>
+    <path d="M15 220 Q10 240 25 260 C40 280, 70 285, 95 275 C120 265, 140 245, 145 210 C150 175, 140 150, 120 135 C100 120, 75 115, 55 125 C35 135, 20 160, 25 190 Z" fill="url(#palmDepthLeft)"/>
+    
+    <!-- Thumb (Left) -->
+    <path d="M15 195 C15 165, 30 145, 45 140 C60 135, 70 145, 65 160 C60 175, 45 190, 35 200 Z" fill="#91523a"/>
+    <path d="M30 160 Q40 155, 45 170" stroke="#733c27" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.6"/>
+
+    <!-- Index Finger (cupping forward) -->
+    <path d="M85 125 C80 100, 95 85, 105 90 C115 95, 115 115, 105 135 Z" fill="#884a32"/>
+    <path d="M100 120 Q105 105, 95 105" stroke="#5a2e1c" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.5"/>
+
+    <!-- Middle Finger -->
+    <path d="M105 135 C115 110, 130 95, 140 105 C150 115, 140 140, 125 150 Z" fill="#7a4029"/>
+
+    <!-- Ring Finger -->
+    <path d="M115 155 C130 135, 145 125, 155 135 C165 145, 150 165, 135 175 Z" fill="#6d3722"/>
+    
+    <!-- Pinky Finger -->
+    <path d="M125 180 C140 165, 150 160, 158 170 C165 180, 150 195, 138 205 Z" fill="#5f2e1a"/>
+
+    <!-- Left hand palm life lines / natural creases -->
+    <path d="M45 195 C60 215, 80 230, 95 240" stroke="#5a2e1c" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.6"/>
+    <path d="M65 185 C85 195, 110 200, 125 195" stroke="#5a2e1c" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.5"/>
+    <path d="M55 165 C80 165, 100 170, 110 160" stroke="#5a2e1c" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.4"/>
+  </g>
+
+  <!-- RIGHT HAND (Realistic shaping, overlapping left) -->
+  <g id="right-hand">
+    <!-- Base hand structure -->
+    <path d="M185 230 C205 260, 240 270, 275 255 C310 240, 325 200, 320 165 C315 130, 290 105, 255 105 C220 105, 195 125, 185 160 C175 195, 175 215, 185 230 Z" fill="url(#skinBaseRight)"/>
+    <path d="M185 230 C205 260, 240 270, 275 255 C310 240, 325 200, 320 165 C315 130, 290 105, 255 105 C220 105, 195 125, 185 160 C175 195, 175 215, 185 230 Z" fill="url(#palmDepthRight)"/>
+    
+    <!-- Thumb (Right) -->
+    <path d="M315 170 C335 140, 345 110, 325 95 C305 80, 285 100, 280 120 C275 140, 290 160, 305 170 Z" fill="#8a4d35"/>
+    <path d="M305 130 Q315 115, 325 115" stroke="#5a2e1c" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.5"/>
+    
+    <!-- Index Finger (cupping forward on right) -->
+    <path d="M225 115 C205 85, 190 70, 180 80 C170 90, 180 115, 200 135 Z" fill="#82462e"/>
+    
+    <!-- Middle Finger -->
+    <path d="M205 135 C185 110, 170 100, 160 110 C150 120, 165 145, 185 160 Z" fill="#733c27"/>
+    
+    <!-- Ring Finger -->
+    <path d="M195 165 C175 145, 160 140, 152 150 C144 160, 160 180, 180 190 Z" fill="#663320"/>
+
+    <!-- Right hand palm creases -->
+    <path d="M295 165 C275 190, 250 215, 225 230" stroke="#4a2414" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.6"/>
+    <path d="M275 145 C250 160, 220 170, 205 165" stroke="#4a2414" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.5"/>
+    <path d="M255 125 C240 135, 220 145, 210 140" stroke="#4a2414" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.4"/>
+  </g>
+
+  <!-- SALT CRYSTALS (nestled securely in the hands) -->
+  <g id="salt-crystals">
+    <!-- Big center crystal (highly faceted realistic reflection) -->
+    <path d="M140 180 L160 150 L200 145 L225 175 L190 205 L150 195 Z" fill="#fceff5"/>
+    <path d="M140 180 L160 150 L175 170 Z" fill="#f7c8dc" opacity="0.8"/>
+    <path d="M160 150 L200 145 L180 175 L175 170 Z" fill="#fcfcfc" opacity="0.9"/>
+    <path d="M200 145 L225 175 L190 205 L180 175 Z" fill="#e8a2c2" opacity="0.7"/>
+    <path d="M140 180 L175 170 L180 175 L190 205 L150 195 Z" fill="#f5d6e6" opacity="0.9"/>
+    <polygon points="175,170 180,175 190,205 185,190" fill="white" opacity="0.6"/>
+
+    <!-- Left side crystal block -->
+    <path d="M110 165 L125 140 L150 150 L140 180 L120 185 Z" fill="#fbe5f0"/>
+    <path d="M110 165 L125 140 L135 155 Z" fill="white" opacity="0.7"/>
+    <path d="M125 140 L150 150 L140 180 L135 155 Z" fill="#df94b8" opacity="0.6"/>
+    
+    <!-- Right deeper pink crystal -->
+    <path d="M190 145 L215 125 L245 140 L240 165 L210 180 Z" fill="#f4c6db"/>
+    <path d="M190 145 L215 125 L220 150 Z" fill="#ffffff" opacity="0.85"/>
+    <path d="M215 125 L245 140 L240 165 L220 150 Z" fill="#e092b6" opacity="0.65"/>
+    <path d="M190 145 L220 150 L210 180 Z" fill="#f7e1eb" opacity="0.9"/>
+
+    <!-- Small cluster front -->
+    <path d="M170 190 L185 180 L205 195 L195 215 L175 210 Z" fill="#fcedf3"/>
+    <path d="M170 190 L185 180 L195 215 L175 210 Z" fill="#eaaaca" opacity="0.5"/>
+    <polygon points="170,190 185,180 190,195" fill="white" opacity="0.8"/>
+
+    <!-- Subtler loose grains and sparkles -->
+    <polygon points="135,145 142,138 148,143 140,150" fill="#fde5f0" opacity="0.9"/>
+    <polygon points="225,130 230,122 238,127 232,135" fill="#f7cadc" opacity="0.8"/>
+    <circle cx="152" cy="138" r="3" fill="white" opacity="0.9"/>
+    <circle cx="212" cy="120" r="2.5" fill="white" opacity="0.8"/>
+    <circle cx="180" cy="142" r="3.5" fill="white" opacity="0.95"/>
+    <circle cx="198" cy="195" r="2" fill="white" opacity="0.85"/>
+    <circle cx="165" cy="200" r="1.5" fill="white" opacity="0.75"/>
+  </g>
+</svg>
