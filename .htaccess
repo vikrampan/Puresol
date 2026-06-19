@@ -61,6 +61,10 @@ RedirectMatch 403 ^/logs(/|$)
 RedirectMatch 403 ^/includes(/|$)
 RedirectMatch 403 ^/scripts(/|$)
 
+# Block the Git metadata folder (present on the server when deploying via Git).
+# Prevents leaking source code / history through /.git/...
+RedirectMatch 404 ^/\.git(/|$)
+
 # ---- Allow access to robots.txt, sitemap.xml, .well-known ----
 <Files "robots.txt">
     Require all granted

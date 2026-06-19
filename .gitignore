@@ -1,22 +1,22 @@
 # ─── Secrets — NEVER commit ───────────────────────────────
-public_html/config.php
+config.php
 
-# ─── OS / editor junk ─────────────────────────────────────
+# ─── Local tooling / editor ───────────────────────────────
+.claude/
+.idea/
+.vscode/
+
+# ─── OS junk ──────────────────────────────────────────────
 .DS_Store
 **/.DS_Store
 Thumbs.db
 *.swp
-.idea/
-.vscode/
 
 # ─── Runtime / generated ──────────────────────────────────
-public_html/logs/
-public_html/logs/*
-public_html/uploads/temp/
+logs/
+logs/*
+uploads/temp/
 
 # ─── Large backup archive (not served by the site) ───────
-public_html/assets/assets.zip
+assets/assets.zip
 *.zip
-
-# ─── Local notes (optional) ───────────────────────────────
-# SEO_PLAN.md   # uncomment to keep planning docs out of the repo
