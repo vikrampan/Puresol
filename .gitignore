@@ -20,3 +20,6 @@ uploads/temp/
 # ─── Large backup archive (not served by the site) ───────
 assets/assets.zip
 *.zip
+
+# Local image backups (not deployed)
+_originals/
