@@ -17,6 +17,14 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Sambhar Salt (pillar) -->
+  <url>
+    <loc>https://puresol.in/sambhar-salt.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
   <!-- Science -->
   <url>
     <loc>https://puresol.in/science.html</loc>
