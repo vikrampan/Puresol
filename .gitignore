@@ -1,5 +1,6 @@
-# ─── Secrets — NEVER commit ───────────────────────────────
-config.php
+# ─── config.php is committed intentionally (PRIVATE repo) so it
+#     deploys with every push. ⚠ Rotate DB/SMTP passwords if this
+#     repo is ever made public.
 
 # ─── Local tooling / editor ───────────────────────────────
 .claude/

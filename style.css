@@ -5047,3 +5047,31 @@ html.lenis {
   opacity: 0.85;
   margin: 0 0 1rem;
 }
+
+/* Footer social icons */
+.footer__social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.9rem;
+}
+.footer__social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  color: var(--ivory);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  transition: background 0.25s ease, color 0.25s ease, transform 0.2s ease;
+}
+.footer__social-link:hover {
+  background: var(--gold);
+  color: var(--maroon-deep);
+  transform: translateY(-2px);
+}
+.footer__social-link svg {
+  display: block;
+}
