@@ -361,8 +361,8 @@ document.addEventListener('DOMContentLoaded', () => {
       himalayan: {
         ph: 7.3,
         phPosition: 52.1,
-        minerals: 12,
-        mineralBar: 22,
+        minerals: 40,
+        mineralBar: 74,
         microplastics: { label: 'Moderate', icon: '⚠', class: 'warning' },
         additives: { label: 'Minimal', icon: '~', class: 'warning' },
         bleaching: { label: 'No', icon: '✓', class: '' },
