@@ -345,17 +345,18 @@ h6 {
 }
 
 .nav__logo-img {
-  height: 48px;
+  height: 64px;
   width: auto;
   flex-shrink: 0;
   display: block;
   /* Legible on dark (hero) and light (scrolled) nav alike */
-  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.35));
-  transition: filter var(--duration-fast) var(--ease-smooth);
+  filter: drop-shadow(0 1px 3px rgba(62, 15, 26, 0.35));
+  transition: height var(--duration-fast) var(--ease-smooth), filter var(--duration-fast) var(--ease-smooth);
 }
 
 .nav.scrolled .nav__logo-img {
-  filter: none;
+  height: 54px;
+  filter: drop-shadow(0 1px 2px rgba(62, 15, 26, 0.2));
 }
 
 .nav__logo-text {
