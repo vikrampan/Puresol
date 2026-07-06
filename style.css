@@ -518,56 +518,23 @@ h6 {
 }
 
 /*
- * Cover-fit an iframe (no object-fit support).
- * We size it to whichever dimension is "tighter" and let the other overflow,
- * then center with translate.  The extra scale(1.2) on portrait ensures
- * the 16:9 video always bleeds off-screen rather than leaving gaps.
+ * Native <video> supports object-fit, so a simple full-bleed cover fit
+ * handles every aspect ratio (landscape + portrait) with no sizing hacks.
  */
-.hero__video-wrap iframe {
+.hero__video-wrap video {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100vw;
-  height: 56.25vw;
-  /* 100vw * 9/16  — maintain 16:9 */
-  min-height: 100vh;
-  min-width: 177.78vh;
-  /* 100vh * 16/9  — maintain 16:9 */
-  transform: translate(-50%, -50%);
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border: none;
   pointer-events: none;
-}
-
-/* On portrait screens the viewport is taller than wide,
-   so the 16:9 video must scale WAY up to fill vertically.
-   A generous scale ensures no sliver of background ever peeks through. */
-@media (orientation: portrait) {
-  .hero__video-wrap iframe {
-    width: 177.78vh;
-    height: 100vh;
-    min-width: 100vw;
-    min-height: 100vh;
-    /* scale up to guarantee full bleed even with browser-chrome insets */
-    transform: translate(-50%, -50%) scale(1.15);
-  }
 }
 
 /* dvh support — fixes the iOS Safari address-bar gap */
 @supports (height: 100dvh) {
   .hero {
     height: 100dvh;
-  }
-
-  .hero__video-wrap iframe {
-    min-height: 100dvh;
-    min-width: calc(100dvh * 16 / 9);
-  }
-
-  @media (orientation: portrait) {
-    .hero__video-wrap iframe {
-      height: 100dvh;
-      width: calc(100dvh * 16 / 9);
-    }
   }
 }
 
