@@ -68,6 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initMarquee();
     initSaltLab();
     initWellnessZones();
+    if (document.querySelector('.global-reach')) initGlobalMap();
     if (document.querySelector('.faq-item__question')) initFaqAccordion();
   }
 
@@ -630,6 +631,85 @@ document.addEventListener('DOMContentLoaded', () => {
       } catch (_) {
         submitBtn.disabled = false;
       }
+    });
+  }
+
+  /* ----------------------------------------------------------
+     GLOBAL REACH — interactive world map
+     Two-way sync between map pins and the market list; tooltip
+     follows the active pin. Works with hover, keyboard and tap.
+     ---------------------------------------------------------- */
+  function initGlobalMap() {
+    const map     = document.getElementById('globalMap');
+    const tooltip = document.getElementById('mapTooltip');
+    if (!map || !tooltip) return;
+
+    const pins  = Array.from(map.querySelectorAll('.gr-pin'));
+    const items = Array.from(document.querySelectorAll('.gr-item'));
+    const countries = Array.from(map.querySelectorAll('.gr-country'));
+
+    const byLoc = (arr, loc) => arr.find(el => el.dataset.loc === loc);
+
+    const LABELS = {
+      india:       ['India', 'Sambhar Lake · Our Source'],
+      netherlands: ['Netherlands', 'Amsterdam'],
+      belgium:     ['Belgium', 'Brussels'],
+      luxembourg:  ['Luxembourg', 'Luxembourg City'],
+      kenya:       ['Kenya', 'Nairobi County'],
+    };
+
+    function positionTooltip(pin) {
+      const mapRect = map.getBoundingClientRect();
+      const pinRect = pin.getBoundingClientRect();
+      const x = pinRect.left + pinRect.width / 2 - mapRect.left;
+      const y = pinRect.top + pinRect.height / 2 - mapRect.top;
+      tooltip.style.left = x + 'px';
+      tooltip.style.top  = y + 'px';
+    }
+
+    function activate(loc) {
+      const pin  = byLoc(pins, loc);
+      const item = byLoc(items, loc);
+      const land = byLoc(countries, loc);
+      pins.forEach(p => p.classList.toggle('is-active', p === pin));
+      items.forEach(i => i.classList.toggle('is-active', i === item));
+      countries.forEach(c => c.classList.toggle('is-active', c === land));
+      if (pin && LABELS[loc]) {
+        tooltip.innerHTML = '<strong>' + LABELS[loc][0] + '</strong><span>' + LABELS[loc][1] + '</span>';
+        positionTooltip(pin);
+        tooltip.classList.add('is-visible');
+      }
+    }
+
+    function clear() {
+      pins.forEach(p => p.classList.remove('is-active'));
+      items.forEach(i => i.classList.remove('is-active'));
+      countries.forEach(c => c.classList.remove('is-active'));
+      tooltip.classList.remove('is-visible');
+    }
+
+    [...pins, ...items].forEach(el => {
+      const loc = el.dataset.loc;
+      el.addEventListener('mouseenter', () => activate(loc));
+      el.addEventListener('mouseleave', clear);
+      el.addEventListener('focus', () => activate(loc));
+      el.addEventListener('blur', clear);
+      /* tap toggles on touch devices */
+      el.addEventListener('click', (e) => {
+        e.preventDefault();
+        const active = el.classList.contains('is-active');
+        clear();
+        if (!active) activate(loc);
+      });
+      el.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); activate(loc); }
+      });
+    });
+
+    /* keep tooltip aligned if the layout reflows */
+    window.addEventListener('resize', () => {
+      const active = pins.find(p => p.classList.contains('is-active'));
+      if (active) positionTooltip(active);
     });
   }
 

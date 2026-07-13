@@ -332,7 +332,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
 
-  <link rel="stylesheet" href="style.css?v=20260706a">
+  <link rel="stylesheet" href="style.css?v=20260713a">
   <!-- Preload the hero background video so it starts playing the instant the page opens -->
   <link rel="preload" as="video" href="assets/video/hero.mp4" type="video/mp4">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x1F48E;</text></svg>">
@@ -855,6 +855,84 @@
       </div>
     </section>
 
+    <!-- GLOBAL REACH -->
+    <section class="section global-reach" id="global-reach">
+      <div class="container">
+        <div class="global-reach__header">
+          <p class="text-label reveal-up">Sambhar Lake to the World</p>
+          <h2 class="heading-section reveal-up" style="margin-top:1rem;">Where Puresol Travels</h2>
+          <p class="global-reach__intro reveal-up">
+            From a single lake in Rajasthan, our salt now reaches kitchens and industry
+            across three continents. Hover a market to see where every grain is headed.
+          </p>
+        </div>
+
+        <div class="global-reach__layout reveal-up">
+          <div class="global-reach__map" id="globalMap">
+            <img class="global-reach__base" src="assets/world-base.svg"
+                 alt="" aria-hidden="true" width="1000" height="405" loading="lazy">
+            <svg class="global-reach__overlay" viewBox="0 18 1000 405"
+                 preserveAspectRatio="xMidYMid meet" role="img"
+                 aria-label="Map of the countries where Puresol salt is used">
+              <g class="global-reach__countries">
+            <path class="gr-country" data-loc="india" d="M770.4,171.5L770.6,172.5L769.6,173.1L769.8,174.8L767.8,174.3L764.2,176.2L764.3,177.8L762.8,180.1L762.6,181.5L761.4,183.7L759.2,183.1L759.1,186.0L758.5,186.9L758.8,188.1L757.4,188.8L756.0,184.4L755.2,184.4L754.7,186.2L753.2,184.7L754.1,183.1L755.3,183.0L756.6,180.6L755.0,180.1L752.4,180.2L749.8,179.8L749.5,177.9L748.2,177.7L746.0,176.5L745.0,178.4L747.0,179.9L745.3,180.9L744.7,181.9L746.4,182.7L745.9,184.4L746.9,186.4L747.3,188.7L746.9,189.7L745.0,189.7L741.6,190.3L741.8,192.4L740.3,194.0L736.3,195.9L733.2,199.2L731.1,200.9L728.3,202.7L728.3,204.0L726.9,204.7L724.4,205.7L723.1,205.8L722.3,208.0L722.9,211.6L723.0,213.9L721.8,216.5L721.8,221.2L720.4,221.4L719.1,223.5L720.0,224.4L717.4,225.2L716.5,227.1L715.4,227.9L712.8,225.3L711.5,221.4L710.4,218.6L709.4,217.3L708.0,214.6L707.3,211.1L706.8,209.4L704.3,205.6L703.1,200.2L702.3,196.6L702.3,193.3L701.8,190.7L697.7,192.3L695.8,192.0L692.1,188.6L693.5,187.6L692.6,186.5L689.4,184.2L691.2,182.3L697.3,182.3L696.8,180.0L695.2,178.5L694.9,176.4L693.1,175.2L696.2,172.3L699.4,172.5L702.3,169.6L704.0,166.7L706.7,163.9L706.7,162.0L709.1,160.4L706.8,159.0L705.8,157.1L704.9,154.7L706.2,153.5L710.4,154.2L713.5,153.7L716.2,151.4L719.2,154.7L718.9,156.9L720.0,158.3L719.9,159.8L717.9,159.4L718.7,162.5L721.4,164.2L725.3,166.2L723.5,167.4L722.5,170.0L725.2,171.1L727.8,172.4L731.4,174.0L735.2,174.3L736.8,175.8L739.0,176.0L742.3,176.7L744.6,176.6L744.9,175.5L744.6,173.8L744.8,172.6L746.5,172.0L746.7,174.2L746.8,174.7L749.3,175.8L751.0,175.3L753.4,175.5L755.6,175.4L755.8,173.7L754.7,172.9L757.0,172.5L759.5,170.4L762.7,168.7L765.0,169.4L767.0,168.2L768.3,169.9L767.4,171.1L770.4,171.5Z"/>
+            <path class="gr-country" data-loc="netherlands" d="M519.2,101.4L519.7,102.4L519.0,104.9L518.3,106.0L516.6,106.0L517.1,108.9L515.6,108.2L513.8,107.0L511.2,107.6L509.2,107.4L510.6,106.6L513.1,102.5L516.9,101.4L519.2,101.4Z"/>
+            <path class="gr-country" data-loc="belgium" d="M517.1,108.9L516.8,110.8L516.1,110.9L515.8,112.4L513.3,111.2L511.9,111.4L510.0,110.1L508.7,108.9L507.4,108.9L507.0,107.9L509.2,107.4L511.2,107.6L513.8,107.0L515.6,108.2L517.1,108.9Z"/>
+            <path class="gr-country" data-loc="luxembourg" d="M516.8,110.8L517.3,111.4L517.2,112.6L516.4,112.7L515.8,112.4L516.1,110.9L516.8,110.8Z"/>
+            <path class="gr-country" data-loc="kenya" d="M608.9,263.0L604.9,260.2L604.7,258.6L594.6,252.9L594.2,252.6L594.1,249.7L594.9,248.6L596.3,246.7L597.3,244.7L596.1,241.5L595.8,240.1L594.5,238.2L596.2,236.5L598.1,234.7L599.5,235.2L599.5,236.7L600.4,237.6L602.4,237.6L605.9,240.0L606.8,240.0L607.4,240.0L608.0,240.3L609.9,240.5L610.7,239.3L613.2,238.2L614.4,239.1L616.3,239.1L613.8,242.3L613.9,252.4L615.5,254.7L613.6,255.8L612.9,256.9L611.8,257.1L611.4,259.1L610.6,260.2L610.0,262.1L608.9,263.0Z"/>
+              </g>
+              <g class="global-reach__pins">
+            <g class="gr-pin is-origin" data-loc="india" tabindex="0" role="button" aria-label="India — Sambhar Lake · Our Source" transform="translate(708.6,175.1)"><circle class="gr-pin__pulse" r="9"/><circle class="gr-pin__halo" r="6"/><circle class="gr-pin__dot" r="3.6"/></g>
+            <g class="gr-pin" data-loc="netherlands" tabindex="0" role="button" aria-label="Netherlands — Amsterdam" transform="translate(513.6,104.5)"><circle class="gr-pin__pulse" r="9"/><circle class="gr-pin__halo" r="6"/><circle class="gr-pin__dot" r="3.6"/></g>
+            <g class="gr-pin" data-loc="belgium" tabindex="0" role="button" aria-label="Belgium — Brussels" transform="translate(512.1,108.8)"><circle class="gr-pin__pulse" r="9"/><circle class="gr-pin__halo" r="6"/><circle class="gr-pin__dot" r="3.6"/></g>
+            <g class="gr-pin" data-loc="luxembourg" tabindex="0" role="button" aria-label="Luxembourg — Luxembourg City" transform="translate(517.0,112.2)"><circle class="gr-pin__pulse" r="9"/><circle class="gr-pin__halo" r="6"/><circle class="gr-pin__dot" r="3.6"/></g>
+            <g class="gr-pin" data-loc="kenya" tabindex="0" role="button" aria-label="Kenya — Nairobi County" transform="translate(602.3,253.6)"><circle class="gr-pin__pulse" r="9"/><circle class="gr-pin__halo" r="6"/><circle class="gr-pin__dot" r="3.6"/></g>
+              </g>
+            </svg>
+            <div class="global-reach__tooltip" id="mapTooltip" aria-hidden="true"></div>
+          </div>
+
+          <ul class="global-reach__list" id="globalList" aria-label="Puresol markets">
+          <li class="gr-item is-origin" data-loc="india" tabindex="0">
+            <span class="gr-item__marker"></span>
+            <span class="gr-item__body">
+              <span class="gr-item__country">India</span>
+              <span class="gr-item__place">Sambhar Lake &middot; Our Source</span>
+            </span>
+          </li>
+          <li class="gr-item" data-loc="netherlands" tabindex="0">
+            <span class="gr-item__marker"></span>
+            <span class="gr-item__body">
+              <span class="gr-item__country">Netherlands</span>
+              <span class="gr-item__place">Amsterdam</span>
+            </span>
+          </li>
+          <li class="gr-item" data-loc="belgium" tabindex="0">
+            <span class="gr-item__marker"></span>
+            <span class="gr-item__body">
+              <span class="gr-item__country">Belgium</span>
+              <span class="gr-item__place">Brussels</span>
+            </span>
+          </li>
+          <li class="gr-item" data-loc="luxembourg" tabindex="0">
+            <span class="gr-item__marker"></span>
+            <span class="gr-item__body">
+              <span class="gr-item__country">Luxembourg</span>
+              <span class="gr-item__place">Luxembourg City</span>
+            </span>
+          </li>
+          <li class="gr-item" data-loc="kenya" tabindex="0">
+            <span class="gr-item__marker"></span>
+            <span class="gr-item__body">
+              <span class="gr-item__country">Kenya</span>
+              <span class="gr-item__place">Nairobi County</span>
+            </span>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
     <!-- FOOTER -->
     <!-- TRUST / CERTIFICATIONS STRIP -->
     <section class="trust-strip" aria-label="Certifications">
@@ -920,7 +998,7 @@
 
   </main>
 
-  <script src="main.js?v=20260624"></script>
+  <script src="main.js?v=20260713a"></script>
 
 </body>
 </html>
