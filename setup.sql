@@ -197,17 +197,17 @@ INSERT INTO `products` (`name`, `slug`, `tagline`, `description`, `price`, `comp
     1
 ),
 (
-    'Super 7 Salt',
-    'super-7-salt',
-    'Seven powerful mineral salts in one premium blend',
-    'Puresol Super 7 Salt is an advanced blend of seven carefully selected mineral salts, each chosen for its unique health benefits. This premium formulation delivers a complete spectrum of essential minerals and electrolytes. Perfect for athletes, health enthusiasts, and anyone seeking optimal mineral nutrition.',
+    'Super 54+ Salt',
+    'super-54-salt',
+    '54+ trace minerals, naturally enriched with Pro-Vitamin A',
+    'Puresol Super 54+ Salt is Sambhar Lake alkaline salt concentrated with beta-carotene from Dunaliella salina. It carries the full 54+ trace-mineral profile plus natural Pro-Vitamin A. Perfect for athletes, health enthusiasts, and anyone seeking optimal mineral nutrition.',
     499.00,
     699.00,
     300,
-    'PS-S7S-500G',
-    '/uploads/products/super-7-salt.jpg',
+    'PS-S54S-500G',
+    '/uploads/products/super-54-salt.jpg',
     'Premium',
-    '["Blend of 7 Premium Mineral Salts","Enhanced Electrolyte Balance","Supports pH Balance","Rich in Magnesium & Potassium","Athletic Performance Formula"]',
+    '["54+ Trace Minerals","Enhanced Electrolyte Balance","Supports pH Balance","Rich in Magnesium & Potassium","Athletic Performance Formula"]',
     1,
     2
 );

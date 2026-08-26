@@ -540,7 +540,7 @@ document.addEventListener('DOMContentLoaded', () => {
       vision: {
         emoji: '◎',
         title: 'Vision & Skin',
-        desc: 'Every grain of Super 7 Salt carries beta-carotene from Dunaliella salina — the same pigment that gives the lake its rose hue. In the body, it becomes Vitamin A. For eyes, for skin, for every barrier your immune system maintains against the outside world.',
+        desc: 'Every grain of Super 54+ Salt carries beta-carotene from Dunaliella salina — the same pigment that gives the lake its rose hue. In the body, it becomes Vitamin A. For eyes, for skin, for every barrier your immune system maintains against the outside world.',
         minerals: ['Beta-Carotene (Pro-Vit A)', 'Zinc', 'Selenium', 'Vitamin C', 'B2 Riboflavin', 'Copper'],
         callout: '60mg of beta-carotene per 2g serving. From a lake in Rajasthan, not a supplement factory.',
       },

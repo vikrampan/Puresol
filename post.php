@@ -239,7 +239,7 @@ $jsonFlags = JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE;
           <div>
             <h4 class="footer__col-title">Products</h4>
             <a href="/index.html#products" class="footer__link">Natural Alkaline Salt</a>
-            <a href="/index.html#products" class="footer__link">Super 7 Salt</a>
+            <a href="/index.html#products" class="footer__link">Super 54+ Salt</a>
           </div>
           <div>
             <h4 class="footer__col-title">Company</h4>
