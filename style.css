@@ -798,8 +798,20 @@ h6 {
   font-family: var(--font-display);
   font-size: var(--fs-h3);
   font-style: italic;
+  line-height: 1.2;
   color: var(--maroon);
   margin-bottom: 0.5rem;
+}
+
+/* Reserve two title lines in the multi-column grid so the tagline and the
+   feature pills line up across cards even when one name wraps. */
+@media (min-width: 769px) {
+  .product-card__name {
+    min-height: 2.4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .product-card__tagline {

@@ -213,13 +213,14 @@ document.addEventListener('DOMContentLoaded', () => {
         .from('.intro__divider', { scaleX: 0,          duration: 0.6, ease: 'power2.inOut' }, '-=0.3');
     }
 
-    /* Product cards stagger */
+    /* Product cards reveal — no stagger, so the three cards never sit at
+       different heights while the animation is in flight */
     const cards = gsap.utils.toArray('.product-card');
     if (cards.length) {
       gsap.from(cards, {
         scrollTrigger: { trigger: '.products__grid', start: 'top 75%', toggleActions: 'play none none none' },
         opacity: 0, y: 60, scale: 0.95,
-        duration: 0.9, stagger: 0.2, ease: 'power3.out',
+        duration: 0.9, ease: 'power3.out',
       });
     }
 
